@@ -1,0 +1,5 @@
+GetStatus what is the status for {Station}
+GetStatus what time are the trains from {Station}
+GetStatus trains from {Station}
+GetStatus departures from {Station}
+GetStatus are there any delays at {Station}

@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "GetStatus",
+      "slots": [
+        {
+          "name": "Station",
+          "type": "LIST_OF_STATIONS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
