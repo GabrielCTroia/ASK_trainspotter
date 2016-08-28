@@ -1,10 +1,10 @@
 {
   "intents": [
     {
-      "intent": "GetStatus",
+      "intent": "GetStatusIntent",
       "slots": [
         {
-          "name": "Station",
+          "name": "station",
           "type": "LIST_OF_STATIONS"
         }
       ]

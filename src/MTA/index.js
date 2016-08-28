@@ -4,9 +4,9 @@ const util = require('./util');
 const dataUtil = require('./dataUtil');
 
 const getData = () => {
-  return util.getDataFromFile('./data/output_sample.xml');
+  // return util.getDataFromFile('./data/output_sample.xml');
 
-  // return util.getDataFromURL('http://web.mta.info/status/serviceStatus.txt');
+  return util.getDataFromURL('http://web.mta.info/status/serviceStatus.txt');
 }
 
 const getAllLines = () => getData()
