@@ -1,0 +1,149 @@
+Station
+First Avenue
+Second Avenue
+Third Avenue
+Fifth Avenue/53rd Street
+Fifth Avenue/59th Street
+Fifth Avenue
+Sixth Avenue
+Seventh Avenue
+Eighth Avenue
+Eighth Street–New York University
+14th Street
+14th Street
+14th Street
+14th Street–Union Square
+14th Street–Union Square
+14th Street–Union Square
+18th Street
+23rd Street
+23rd Street
+23rd Street
+23rd Street
+23rd Street
+28th Street
+28th Street
+28th Street
+33rd Street
+34th Street–Herald Square
+34th Street–Herald Square
+34th Street–Hudson Yards
+34th Street–Penn Station
+34th Street–Penn Station
+42nd Street–Bryant Park
+42nd Street–Port Authority Bus Terminal
+47th–50th Streets–Rockefeller Center
+49th Street
+50th Street
+50th Street
+51st Street
+57th Street
+57th Street–Seventh Avenue
+59th Street
+59th Street–Columbus Circle
+59th Street–Columbus Circle
+66th Street–Lincoln Center
+68th Street–Hunter College
+72nd Street
+72nd Street
+77th Street
+79th Street
+81st Street–Museum of Natural History
+86th Street
+86th Street
+86th Street
+96th Street
+96th Street
+96th Street
+103rd Street
+103rd Street
+103rd Street
+110th Street
+116th Street
+116th Street
+116th Street
+116th Street–Columbia University
+125th Street
+125th Street
+125th Street
+125th Street
+135th Street
+135th Street
+137th Street–City College
+145th Street
+145th Street
+145th Street
+155th Street
+155th Street
+157th Street
+163rd Street–Amsterdam Avenue
+168th Street
+168th Street
+175th Street
+181st Street
+181st Street
+190th Street
+191st Street
+207th Street
+215th Street
+Astor Place
+Bleecker Street
+Bowery
+Bowling Green
+Broad Street
+Broadway–Lafayette Street
+Brooklyn Bridge–City Hall
+Canal Street
+Canal Street
+Canal Street
+Canal Street
+Canal Street
+Canal Street
+Cathedral Parkway–110th Street
+Cathedral Parkway–110th Street
+Central Park North–110th Street
+Chambers Street
+Chambers Street
+Chambers Street
+Christopher Street–Sheridan Square
+City Hall
+Cortlandt Street
+Cortlandt Street
+Delancey Street
+Dyckman Street
+Dyckman Street
+East Broadway
+Essex Street
+Franklin Street
+Fulton Street
+Fulton Street
+Fulton Street
+Fulton Street
+Grand Central–42nd Street
+Grand Central
+Grand Central
+Grand Street
+Harlem–148th Street
+Houston Street
+Inwood–207th Street
+Lexington Avenue/53rd Street
+Lexington Avenue/59th Street
+Lexington Avenue–63rd Street
+Marble Hill–225th Street
+Park Place
+Prince Street
+Rector Street
+Rector Street
+Roosevelt Island
+South Ferry
+Spring Street
+Spring Street
+Times Square
+Times Square
+Times Square–42nd Street
+Times Square–42nd Street
+Wall Street
+Wall Street
+West Fourth Street–Washington Square
+Whitehall Street–South Ferry
+World Trade Center

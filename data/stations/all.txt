@@ -1,0 +1,357 @@
+First Avenue
+Second Avenue
+Third Avenue
+Fifth Avenue/53rd Street
+Fifth Avenue/59th Street
+Fifth Avenue
+Sixth Avenue
+Eighth Avenue
+Eighth Street–New York University
+14th Street
+14th Street–Union Square
+18th Street
+23rd Street
+28th Street
+33rd Street
+34th Street–Herald Square
+34th Street–Hudson Yards
+34th Street–Penn Station
+42nd Street–Bryant Park
+42nd Street–Port Authority Bus Terminal
+47th–50th Streets–Rockefeller Center
+49th Street
+50th Street
+51st Street
+57th Street
+57th Street–Seventh Avenue
+59th Street
+59th Street–Columbus Circle
+66th Street–Lincoln Center
+68th Street–Hunter College
+72nd Street
+81st Street–Museum of Natural History
+96th Street
+103rd Street
+110th Street
+116th Street
+116th Street–Columbia University
+125th Street
+135th Street
+137th Street–City College
+145th Street
+155th Street
+157th Street
+163rd Street–Amsterdam Avenue
+168th Street
+175th Street
+181st Street
+190th Street
+191st Street
+207th Street
+215th Street
+Astor Place
+Bleecker Street
+Bowery
+Bowling Green
+Broad Street
+Broadway–Lafayette Street
+Brooklyn Bridge–City Hall
+Canal Street
+Cathedral Parkway–110th Street
+Central Park North–110th Street
+Chambers Street
+Christopher Street–Sheridan Square
+City Hall
+Cortlandt Street
+Delancey Street
+Dyckman Street
+East Broadway
+Essex Street
+Franklin Street
+Fulton Street
+Grand Central–42nd Street
+Grand Central
+Grand Street
+Harlem–148th Street
+Houston Street
+Inwood–207th Street
+Lexington Avenue/53rd Street
+Lexington Avenue/59th Street
+Lexington Avenue–63rd Street
+Marble Hill–225th Street
+Park Place
+Prince Street
+Rector Street
+Roosevelt Island
+South Ferry
+Spring Street
+Times Square
+Times Square–42nd Street
+Wall Street
+West Fourth Street–Washington Square
+Whitehall Street–South Ferry
+World Trade Center
+Third Avenue–138th Street
+Third Avenue–149th Street
+138th Street–Grand Concourse
+149th Street–Grand Concourse
+161st Street–Yankee Stadium
+167th Street
+170th Street
+174th Street
+174th–175th Streets
+176th Street
+182nd–183rd Streets
+183rd Street
+219th Street
+225th Street
+231st Street
+233rd Street
+238th Street
+Allerton Avenue
+Baychester Avenue
+Bedford Park Boulevard
+Bedford Park Boulevard–Lehman College
+Bronx Park East
+Brook Avenue
+Buhre Avenue
+Burke Avenue
+Burnside Avenue
+Castle Hill Avenue
+Cypress Avenue
+East 143rd Street–St. Mary's Street
+East 149th Street
+East 180th Street
+Eastchester–Dyre Avenue
+Elder Avenue
+Fordham Road
+Freeman Street
+Gun Hill Road
+Hunts Point Avenue
+Intervale Avenue
+Jackson Avenue
+Kingsbridge Road
+Longwood Avenue
+Middletown Road
+Morris Park
+Morrison Avenue–Soundview
+Mosholu Parkway
+Mount Eden Avenue
+Nereid Avenue
+Norwood–205th Street
+Parkchester
+Pelham Bay Park
+Pelham Parkway
+Prospect Avenue
+Simpson Street
+St. Lawrence Avenue
+Tremont Avenue
+Van Cortlandt Park–242nd Street
+Wakefield–241st Street
+West Farms Square–East Tremont Avenue
+Westchester Square–East Tremont Avenue
+Whitlock Avenue
+Woodlawn
+Zerega Avenue
+Fourth Avenue
+Seventh Avenue
+Ninth Avenue
+Ninth Street
+15th Street–Prospect Park
+18th Avenue
+20th Avenue
+25th Avenue
+25th Street
+45th Street
+53rd Street
+55th Street
+62nd Street
+71st Street
+77th Street
+79th Street
+86th Street
+Alabama Avenue
+Atlantic Avenue
+Atlantic Avenue–Barclays Center
+Avenue H
+Avenue I
+Avenue J
+Avenue M
+Avenue N
+Avenue P
+Avenue U
+Avenue X
+Bay 50th Street
+Bay Parkway
+Bay Ridge Avenue
+Bay Ridge–95th Street
+Bedford Avenue
+Bedford–Nostrand Avenues
+Bergen Street
+Beverley Road
+Beverly Road
+Borough Hall
+Botanic Garden
+Brighton Beach
+Broadway Junction
+Bushwick Avenue–Aberdeen Street
+Canarsie–Rockaway Parkway
+Carroll Street
+Central Avenue
+Chauncey Street
+Church Avenue
+Clark Street
+Classon Avenue
+Cleveland Street
+Clinton–Washington Avenues
+Coney Island–Stillwell Avenue
+Cortelyou Road
+Court Street
+Crescent Street
+Crown Heights–Utica Avenue
+Cypress Hills
+DeKalb Avenue
+Ditmas Avenue
+East 105th Street
+Eastern Parkway–Brooklyn Museum
+Euclid Avenue
+Flatbush Avenue–Brooklyn College
+Flushing Avenue
+Fort Hamilton Parkway
+Franklin Avenue
+Gates Avenue
+Graham Avenue
+Grand Army Plaza
+Grant Avenue
+Greenpoint Avenue
+Halsey Street
+Hewes Street
+High Street
+Hoyt Street
+Hoyt–Schermerhorn Streets
+Jay Street–MetroTech
+Jefferson Street
+Junius Street
+Kings Highway
+Kingston Avenue
+Kingston–Throop Avenues
+Knickerbocker Avenue
+Kosciuszko Street
+Lafayette Avenue
+Liberty Avenue
+Livonia Avenue
+Lorimer Street
+Marcy Avenue
+Metropolitan Avenue
+Montrose Avenue
+Morgan Avenue
+Myrtle Avenue
+Myrtle–Willoughby Avenues
+Myrtle–Wyckoff Avenues
+Nassau Avenue
+Neck Road
+Neptune Avenue
+Nevins Street
+New Lots Avenue
+New Utrecht Avenue
+Newkirk Avenue
+Norwood Avenue
+Newkirk Plaza
+Nostrand Avenue
+Ocean Parkway
+Parkside Avenue
+Pennsylvania Avenue
+President Street
+Prospect Park
+Ralph Avenue
+Rockaway Avenue
+Saratoga Avenue
+Sheepshead Bay
+Shepherd Avenue
+Smith–Ninth Streets
+Sterling Street
+Sutter Avenue
+Sutter Avenue–Rutland Road
+Union Street
+Utica Avenue
+Van Siclen Avenue
+West Eighth Street–New York Aquarium
+Wilson Avenue
+Winthrop Street
+York Street
+21st Street
+21st Street–Queensbridge
+30th Avenue
+33rd Street–Rawson Street
+36th Avenue
+36th Street
+39th Avenue
+40th Street–Lowery Street
+46th Street
+46th Street–Bliss Street
+52nd Street
+63rd Drive–Rego Park
+65th Street
+67th Avenue
+69th Street
+74th Street–Broadway
+75th Avenue
+75th Street–Elderts Lane
+80th Street
+82nd Street–Jackson Heights
+85th Street–Forest Parkway
+88th Street
+90th Street–Elmhurst Avenue
+103rd Street–Corona Plaza
+104th Street
+111th Street
+121st Street
+169th Street
+Aqueduct Racetrack
+Aqueduct–North Conduit Avenue
+Astoria Boulevard
+Astoria–Ditmars Boulevard
+Beach 25th Street
+Beach 36th Street
+Beach 44th Street
+Beach 60th Street
+Beach 67th Street
+Beach 90th Street
+Beach 98th Street
+Beach 105th Street
+Briarwood
+Broad Channel
+Broadway
+Court Square
+Court Square–23rd Street
+Elmhurst Avenue
+Far Rockaway–Mott Avenue
+Flushing–Main Street
+Forest Avenue
+Forest Hills–71st Avenue
+Fresh Pond Road
+Grand Avenue–Newtown
+Howard Beach–JFK Airport
+Hunters Point Avenue
+Jackson Heights–Roosevelt Avenue
+Jamaica Center–Parsons/Archer
+Jamaica–179th Street
+Jamaica–Van Wyck
+Junction Boulevard
+Kew Gardens–Union Turnpike
+Mets–Willets Point
+Middle Village–Metropolitan Avenue
+Northern Boulevard
+Ozone Park–Lefferts Boulevard
+Parsons Boulevard
+Queens Plaza
+Queensboro Plaza
+Rockaway Boulevard
+Rockaway Park–Beach 116th Street
+Seneca Avenue
+Steinway Street
+Sutphin Boulevard
+Sutphin Boulevard–Archer Avenue–JFK Airport
+Vernon Boulevard–Jackson Avenue
+Woodhaven Boulevard
+61st Street–Woodside
