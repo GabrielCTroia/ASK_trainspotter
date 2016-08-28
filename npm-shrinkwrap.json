@@ -1,0 +1,141 @@
+{
+  "name": "mta_schedule",
+  "version": "1.0.0",
+  "dependencies": {
+    "ascli": {
+      "version": "1.0.0",
+      "from": "ascli@latest",
+      "resolved": "https://registry.npmjs.org/ascli/-/ascli-1.0.0.tgz"
+    },
+    "bluebird": {
+      "version": "3.4.3",
+      "from": "bluebird@>=3.4.3 <4.0.0",
+      "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-3.4.3.tgz"
+    },
+    "bytebuffer": {
+      "version": "2.3.2",
+      "from": "bytebuffer@>=2.2.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/bytebuffer/-/bytebuffer-2.3.2.tgz"
+    },
+    "colour": {
+      "version": "0.7.1",
+      "from": "colour@latest",
+      "resolved": "https://registry.npmjs.org/colour/-/colour-0.7.1.tgz"
+    },
+    "dotenv": {
+      "version": "2.0.0",
+      "from": "dotenv@latest",
+      "resolved": "https://registry.npmjs.org/dotenv/-/dotenv-2.0.0.tgz"
+    },
+    "gtfs-realtime-bindings": {
+      "version": "0.0.4",
+      "from": "gtfs-realtime-bindings@latest",
+      "resolved": "https://registry.npmjs.org/gtfs-realtime-bindings/-/gtfs-realtime-bindings-0.0.4.tgz"
+    },
+    "html-to-text": {
+      "version": "2.1.3",
+      "from": "html-to-text@>=2.1.3 <3.0.0",
+      "resolved": "https://registry.npmjs.org/html-to-text/-/html-to-text-2.1.3.tgz",
+      "dependencies": {
+        "he": {
+          "version": "1.1.0",
+          "from": "he@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/he/-/he-1.1.0.tgz"
+        },
+        "htmlparser": {
+          "version": "1.7.7",
+          "from": "htmlparser@>=1.7.7 <2.0.0",
+          "resolved": "https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.7.tgz"
+        },
+        "optimist": {
+          "version": "0.6.1",
+          "from": "optimist@>=0.6.1 <0.7.0",
+          "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz",
+          "dependencies": {
+            "wordwrap": {
+              "version": "0.0.3",
+              "from": "wordwrap@>=0.0.2 <0.1.0",
+              "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+            },
+            "minimist": {
+              "version": "0.0.10",
+              "from": "minimist@>=0.0.1 <0.1.0",
+              "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz"
+            }
+          }
+        },
+        "underscore": {
+          "version": "1.8.3",
+          "from": "underscore@>=1.8.3 <2.0.0",
+          "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz"
+        },
+        "underscore.string": {
+          "version": "3.3.4",
+          "from": "underscore.string@>=3.2.3 <4.0.0",
+          "resolved": "https://registry.npmjs.org/underscore.string/-/underscore.string-3.3.4.tgz",
+          "dependencies": {
+            "sprintf-js": {
+              "version": "1.0.3",
+              "from": "sprintf-js@>=1.0.3 <2.0.0",
+              "resolved": "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
+            },
+            "util-deprecate": {
+              "version": "1.0.2",
+              "from": "util-deprecate@>=1.0.2 <2.0.0",
+              "resolved": "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
+            }
+          }
+        }
+      }
+    },
+    "long": {
+      "version": "1.2.3",
+      "from": "long@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/long/-/long-1.2.3.tgz"
+    },
+    "optjs": {
+      "version": "3.2.2",
+      "from": "optjs@latest",
+      "resolved": "https://registry.npmjs.org/optjs/-/optjs-3.2.2.tgz"
+    },
+    "protobufjs": {
+      "version": "2.0.5",
+      "from": "protobufjs@2.0.5",
+      "resolved": "https://registry.npmjs.org/protobufjs/-/protobufjs-2.0.5.tgz"
+    },
+    "ramda": {
+      "version": "0.22.1",
+      "from": "ramda@latest",
+      "resolved": "https://registry.npmjs.org/ramda/-/ramda-0.22.1.tgz"
+    },
+    "trim-newlines": {
+      "version": "1.0.0",
+      "from": "trim-newlines@latest",
+      "resolved": "https://registry.npmjs.org/trim-newlines/-/trim-newlines-1.0.0.tgz"
+    },
+    "xml2js": {
+      "version": "0.4.17",
+      "from": "xml2js@latest",
+      "resolved": "https://registry.npmjs.org/xml2js/-/xml2js-0.4.17.tgz",
+      "dependencies": {
+        "sax": {
+          "version": "1.2.1",
+          "from": "sax@>=0.6.0",
+          "resolved": "https://registry.npmjs.org/sax/-/sax-1.2.1.tgz"
+        },
+        "xmlbuilder": {
+          "version": "4.2.1",
+          "from": "xmlbuilder@>=4.1.0 <5.0.0",
+          "resolved": "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-4.2.1.tgz",
+          "dependencies": {
+            "lodash": {
+              "version": "4.15.0",
+              "from": "lodash@>=4.0.0 <5.0.0",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.15.0.tgz"
+            }
+          }
+        }
+      }
+    }
+  }
+}
