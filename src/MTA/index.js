@@ -26,4 +26,5 @@ const getStatusForTrain = train => Promise
 module.exports = {
   getStatusForStation,
   getStatusForTrain,
+  isValidStation: dataUtil.isValidStation,
 }

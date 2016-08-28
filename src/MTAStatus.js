@@ -11,27 +11,20 @@ class MTAStatus extends AlexaSkill {
       GetStatusIntent(intent, session, response) {
         const requestedStation = intent.slots.station.value;
 
+        const heading = 'Status for ' + requestedStation + ' station';
+
+        if (!mta.isValidStation(requestedStation)) {
+          const msg = 'The station ' + requestedStation + ' is not a valid station!';
+          const cardText = msg;
+          
+          response.tellWithCard(message, heading, cardText);
+          return;
+        }
+
         Promise
           .resolve(mta.getStatusForStation(requestedStation))
-          // .then(lines => {
-          //   lines.forEach(l => {
-          //     console.log('');
-          //     console.log('------ Line:', l.name[0], '-----');
-          //     console.log('date', l.Date[0], l.Time[0]);
-          //     console.log('status', l.status);
-          //     console.log('info', l.text);
-          //     console.log('');
-          //     console.log('');
-          //   });
-
-          //   console.log('summary:');
-
-          //   console.log('lines #', lines.length);
-          // });
           .then((lines) => lines[0])
           .then((line) => {
-            const heading = 'Status for ' + requestedStation + ' station'; 
-            
             if (line) {
               const message = 'The status for '
                    + requestedStation 
@@ -46,7 +39,9 @@ class MTAStatus extends AlexaSkill {
                 response.tellWithCard(message, heading, cardText);
               }
             } else {
-              const message = 'The station ' + requestedStation + ' was not found!';
+              const message = 'There are no notifications for ' 
+                + requestedStation 
+                + '. Teh status should be good service!';
               const cardText = message;
                
               response.tellWithCard(message, heading, cardText);

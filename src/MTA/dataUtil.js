@@ -2,11 +2,21 @@
 
 const R = require('ramda');
 const util = require('./util');
+const stations = require('./stations').stations;
+
+// Since stations can have multiple names
+// a hash is not really the best choice here.
+// For ex: steinway is not the same as steinway street, although it should best
+// I think a better choice would be an AVR tree ot trie tree (the one perfect for words)
+const stationsHash = R.reduce((r, s) => {
+  r[String(s).toLowerCase()] = true;
+  return r;
+}, {}, stations);
 
 const prepareLine = line => {
-  const nextText = util.htmlToText(line.text); 
+  const nextText = util.htmlToText(line.text);
 
-  return R.merge(line, {text: nextText});
+  return R.merge(line, { text: nextText });
 }
 
 const getAllSubwayLines = (service) => {
@@ -16,6 +26,8 @@ const getAllSubwayLines = (service) => {
     return r.concat(nextLines);
   }, [], service.subway)
 }
+
+const isValidStation = s => !!stationsHash[String(s).toLowerCase()];
 
 // These methods wotk on Line models
 
@@ -45,6 +57,7 @@ const findByStation = R.curry(
 
 module.exports = {
   getAllSubwayLines,
+  isValidStation,
   lines: {
     delayed,
     onTime,
