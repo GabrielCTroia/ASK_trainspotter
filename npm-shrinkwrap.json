@@ -1,6 +1,6 @@
 {
   "name": "mta_schedule",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "ascli": {
       "version": "1.0.0",
