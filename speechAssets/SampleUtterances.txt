@@ -1,4 +1,4 @@
-GetStatus what is the status for {station}
+GetStatusIntent what is the status for {station}
 GetStatus what time are the trains from {station}
 GetStatus trains from {station}
 GetStatus departures from {station}

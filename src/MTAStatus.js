@@ -39,7 +39,12 @@ class MTAStatus extends AlexaSkill {
                    + line.status[0];
               const cardText = message;
 
-              response.tellWithCard(message, heading, cardText);
+              if (line.status[0] !== 'GOOD SERVICE') {
+                const connector = 'And here\s why: ' + line.text; 
+                response.ask(message + '. ' + connector, heading, cardText);
+              } else {
+                response.tellWithCard(message, heading, cardText);
+              }
             } else {
               const message = 'The station ' + requestedStation + ' was not found!';
               const cardText = message;
