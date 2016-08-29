@@ -14,8 +14,8 @@ class MTAStatus extends AlexaSkill {
         const heading = 'Status for ' + requestedStation + ' station';
 
         if (!mta.isValidStation(requestedStation)) {
-          const msg = 'The station ' + requestedStation + ' is not a valid station!';
-          const cardText = msg;
+          const message = 'The station ' + requestedStation + ' is not a valid station!';
+          const cardText = message;
           
           response.tellWithCard(message, heading, cardText);
           return;
