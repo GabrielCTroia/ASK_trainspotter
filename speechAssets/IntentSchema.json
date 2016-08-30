@@ -1,11 +1,20 @@
 {
   "intents": [
     {
-      "intent": "GetStatusIntent",
+      "intent": "GetStationStatusIntent",
       "slots": [
         {
           "name": "station",
           "type": "LIST_OF_STATIONS"
+        }
+      ]
+    },
+    {
+      "intent": "GetTrainStatusIntent",
+      "slots": [
+        {
+          "name": "train",
+          "type": "LIST_OF_TRAINS"
         }
       ]
     },

@@ -1,5 +1,2 @@
-GetStatusIntent what is the status for {station}
-GetStatus what time are the trains from {station}
-GetStatus trains from {station}
-GetStatus departures from {station}
-GetStatus are there any delays at {station}
+GetStationStatusIntent what is the station status for {station}
+GetTrainStatusIntent what is the train status for {train}

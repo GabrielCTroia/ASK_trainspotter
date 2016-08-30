@@ -1,5 +1,11 @@
 "use strict"
 
-const dataUtil = require('./src/MTA/dataUtil');
+const mta = require('./src/MTA');
 
-console.log(dataUtil.isValidStation('steinway'))
+mta.getStatusForTrain('9')
+  .then((info) => {
+    console.log('info', info);
+  })
+  .catch((e) => {
+    console.error('error', e);
+  })

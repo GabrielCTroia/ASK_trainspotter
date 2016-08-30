@@ -3,6 +3,7 @@
 const R = require('ramda');
 const util = require('./util');
 const stations = require('./stations').stations;
+const trains = require('./trains').trains;
 
 // Since stations can have multiple names
 // a hash is not really the best choice here.
@@ -12,6 +13,11 @@ const stationsHash = R.reduce((r, s) => {
   r[String(s).toLowerCase()] = true;
   return r;
 }, {}, stations);
+
+const trainsHash = R.reduce((r, s) => {
+  r[String(s).toLowerCase()] = true;
+  return r;
+}, {}, trains);
 
 const prepareLine = line => {
   const nextText = util.htmlToText(line.text);
@@ -29,6 +35,8 @@ const getAllSubwayLines = (service) => {
 
 const isValidStation = s => !!stationsHash[String(s).toLowerCase()];
 
+const isValidTrain = t => !!trainsHash[String(t).toLowerCase()];
+
 // These methods wotk on Line models
 
 const onTime = line => line.status.indexOf('GOOD SERVICE') > -1;
@@ -40,8 +48,11 @@ const isUsedByTrain = (train, line) => {
   return line.name[0].indexOf(trainName) > -1;
 }
 
+const hasTrain =
+  (train, line) => String(line.name[0]).toLowerCase().indexOf(train) > -1;
+
 const findByTrain = R.curry(
-  (train, lines) => R.filter(line => isLineFor(train, line), lines)
+  (train, lines) => R.filter(l => hasTrain(train, l), lines)
 );
 
 const hasInformationOfStation = (station, line) => {
@@ -58,6 +69,7 @@ const findByStation = R.curry(
 module.exports = {
   getAllSubwayLines,
   isValidStation,
+  isValidTrain,
   lines: {
     delayed,
     onTime,
