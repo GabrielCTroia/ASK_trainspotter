@@ -1,2 +1,12 @@
 GetStationStatusIntent what is the station status for {station}
+GetStationStatusIntent what is the status for {station} station
+GetStationStatusIntent what is the status for the {station} station
 GetTrainStatusIntent what is the train status for {train}
+GetTrainStatusIntent what is the status for {train} train
+GetTrainStatusIntent what is the status for the {train} train
+
+GetYesNoIntent {yesNoQuestion}
+GetYesNoIntent {yesNoQuestion} I would
+GetYesNoIntent {yesNoQuestion} I wouldn't
+GetYesNoIntent {yesNoQuestion} please 
+GetYesNoIntent {yesNoQuestion} thank you

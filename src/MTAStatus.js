@@ -3,39 +3,40 @@
 const AlexaSkill = require('./AlexaSkill');
 const mta = require('./MTA');
 
-class MTAStatus extends AlexaSkill {
+var count = 0; 
 
+class MTAStatus extends AlexaSkill {
 
   constructor(ALEXA_APP_ID) {
     super(ALEXA_APP_ID);
 
-    const nextScheduledPrompt = null;
+    console.log('constructing', ++count);
 
-    const askYesNoQuestion = (response, currentIntent, question) => {
-      nextScheduledPrompt = currentIntent;
-
-      response.ask(question);
+    const askYesNoQuestion = (response, session, currentIntent, question, reprompt) => {
+      session.attributes.nextPrompt = currentIntent;
+      response.ask(question, reprompt);
     }
 
     this.intentHandlers = {
       GetYesNoIntent(intent, session, response) {
-        if (nextScheduledPrompt !== null) {
-          response.tell('Oops! Something didnt go as planned!');
-          nextScheduledPrompt = null;
+        console.log('session: get yes no intent', session);
+
+        if (session.new === true || !session.attributes.nextPrompt) {
+          response.tell('Oops! Something didn\'t go as planned!');
           return;
         }
 
-        const answer = String(intent.slots.yesNo.value).toLowerCase();
+        const answer = String(intent.slots.yesNoQuestion.value).toLowerCase();
 
         if (answer === 'yes') {
           response.tellWithCard(
-            nextScheduledPrompt.message,
-            nextScheduledPrompt.heading
+            session.attributes.nextPrompt.message,
+            session.attributes.nextPrompt.heading
           )
         } else {
           response.tell('Ok! Have the most wonderful day!');
         }
-        nextScheduledPrompt = null;
+        // nextScheduledPrompt = null;
       },
 
       GetStationStatusIntent(intent, session, response) {
@@ -69,7 +70,13 @@ class MTAStatus extends AlexaSkill {
                   message: line.text,
                 }
 
-                ask(response, nextPrompt, 'Would you like to hear why?');
+                askYesNoQuestion(
+                  response,
+                  session,
+                  nextPrompt, 
+                  message + '. Would you like to hear why?', 
+                  'Would you like to hear why the status for ' + requestedStation + ' station is ' + line.status[0]
+                  );
               } else {
                 response.tellWithCard(message, heading, cardText);
               }
@@ -85,6 +92,8 @@ class MTAStatus extends AlexaSkill {
       },
 
       GetTrainStatusIntent(intent, session, response) {
+        console.log('session: get train status', session);
+
         const requestedTrain = intent.slots.train.value;
         const trainLetter = intent.slots.train.value + '.';
 
@@ -120,7 +129,13 @@ class MTAStatus extends AlexaSkill {
                   message: line.text,
                 }
 
-                ask(response, nextPrompt, 'Would you like to hear why?');
+                askYesNoQuestion(
+                  response, 
+                  session,
+                  nextPrompt, 
+                  message + '. Would you like to hear why?', 
+                  'Would you like to hear why the train status for ' + trainLetter + ' is ' + line.status[0]
+                  );
               } else {
                 response.tellWithCard(message, heading, cardText);
               }

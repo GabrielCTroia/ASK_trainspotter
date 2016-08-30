@@ -19,7 +19,13 @@
       ]
     },
     {
-      "intent": "GetYesNoIntent"
+      "intent": "GetYesNoIntent",
+      "slots": [
+        {
+          "name": "yesNoQuestion",
+          "type": "LIST_OF_YES_NO_QUESTION"
+        }
+      ]
     },
     {
       "intent": "AMAZON.HelpIntent"

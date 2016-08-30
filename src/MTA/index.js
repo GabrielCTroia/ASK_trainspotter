@@ -24,10 +24,10 @@ const getStatusForStation = station => Promise
 
 const getStatusForTrain = train => Promise
   .resolve(getAllLines())
-  .then((lines) => {
-    console.log('all lines', lines);
-    return lines;
-  })
+  // .then((lines) => {
+  //   console.log('all lines', lines);
+  //   return lines;
+  // })
   .then(dataUtil.lines.findByTrain(train));
 
 module.exports = {
