@@ -19,6 +19,9 @@
       ]
     },
     {
+      "intent": "GetYesNoIntent"
+    },
+    {
       "intent": "AMAZON.HelpIntent"
     },
     {

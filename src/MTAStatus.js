@@ -4,10 +4,40 @@ const AlexaSkill = require('./AlexaSkill');
 const mta = require('./MTA');
 
 class MTAStatus extends AlexaSkill {
+
+
   constructor(ALEXA_APP_ID) {
     super(ALEXA_APP_ID);
 
+    const nextScheduledPrompt = null;
+
+    const askYesNoQuestion = (response, currentIntent, question) => {
+      nextScheduledPrompt = currentIntent;
+
+      response.ask(question);
+    }
+
     this.intentHandlers = {
+      GetYesNoIntent(intent, session, response) {
+        if (nextScheduledPrompt !== null) {
+          response.tell('Oops! Something didnt go as planned!');
+          nextScheduledPrompt = null;
+          return;
+        }
+
+        const answer = String(intent.slots.yesNo.value).toLowerCase();
+
+        if (answer === 'yes') {
+          response.tellWithCard(
+            nextScheduledPrompt.message,
+            nextScheduledPrompt.heading
+          )
+        } else {
+          response.tell('Ok! Have the most wonderful day!');
+        }
+        nextScheduledPrompt = null;
+      },
+
       GetStationStatusIntent(intent, session, response) {
         const requestedStation = intent.slots.station.value;
 
@@ -33,8 +63,13 @@ class MTAStatus extends AlexaSkill {
               const cardText = message;
 
               if (line.status[0] !== 'GOOD SERVICE') {
-                const connector = 'And here\s why: ' + line.text;
-                response.ask(message + '. ' + connector, heading, cardText);
+                const nextPrompt = {
+                  heading,
+                  cardText,
+                  message: line.text,
+                }
+
+                ask(response, nextPrompt, 'Would you like to hear why?');
               } else {
                 response.tellWithCard(message, heading, cardText);
               }
@@ -51,11 +86,16 @@ class MTAStatus extends AlexaSkill {
 
       GetTrainStatusIntent(intent, session, response) {
         const requestedTrain = intent.slots.train.value;
+        const trainLetter = intent.slots.train.value + '.';
 
-        const heading = 'Status for ' + requestedTrain + ' train';
+        const heading = 'Status for '
+          + trainLetter
+          + ' train';
 
         if (!mta.isValidTrain(requestedTrain)) {
-          const message = 'I\'m sorry. The ' + requestedTrain + ' train is not a valid train!';
+          const message = 'I\'m sorry. The '
+            + trainLetter
+            + '. train is not a valid train!';
           const cardText = message;
 
           response.tellWithCard(message, heading, cardText);
@@ -68,20 +108,25 @@ class MTAStatus extends AlexaSkill {
           .then((line) => {
             if (line) {
               const message = 'The status for '
-                + requestedTrain
+                + trainLetter
                 + ' train is '
                 + line.status[0];
               const cardText = message;
 
               if (line.status[0] !== 'GOOD SERVICE') {
-                const connector = 'And here\s why: ' + line.text;
-                response.ask(message + '. ' + connector, heading, cardText);
+                const nextPrompt = {
+                  heading,
+                  cardText,
+                  message: line.text,
+                }
+
+                ask(response, nextPrompt, 'Would you like to hear why?');
               } else {
                 response.tellWithCard(message, heading, cardText);
               }
             } else {
               const message = 'There are no notifications for '
-                + requestedTrain
+                + trainLetter
                 + '. The status should be good service!';
               const cardText = message;
 
